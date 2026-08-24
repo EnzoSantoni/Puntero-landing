@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/700.css";
+@import "@fontsource/inter/800.css";
+
+@theme {
+  /* Fondos */
+  --color-bg: #0b1120; /* fondo principal (navy muy oscuro) */
+  --color-surface: #161f2e; /* cards / paneles */
+  --color-surface-2: #1b2536; /* cards elevadas / inputs */
+  --color-line: #243044; /* bordes sutiles */
+
+  /* Marca / acentos */
+  --color-primary: #22c55e; /* verde esmeralda: CTA, logo "Pun" */
+  --color-primary-hover: #16a34a;
+  --color-accent: #3b82f6; /* azul: seleccionado, "próximo partido" */
+  --color-accent-hover: #2563eb;
+
+  /* Texto */
+  --color-ink: #f8fafc; /* texto principal */
+  --color-ink-muted: #94a3b8; /* secundario / descripciones */
+  --color-ink-dim: #64748b; /* labels, texto muy tenue */
+
+  /* Colores de datos (stats) — usar con moderación */
+  --color-stat-blue: #3b82f6; /* partidos */
+  --color-stat-green: #22c55e; /* jugadores */
+  --color-stat-orange: #f59e0b; /* equipos / badge Admin */
+  --color-stat-red: #ef4444; /* goles */
+
+  /* Tipografía */
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
